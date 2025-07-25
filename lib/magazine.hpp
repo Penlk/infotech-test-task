@@ -1,4 +1,5 @@
 #include <string>
+#include <fstream>
 #include "message.hpp"
 
 namespace MagazinSpace {
@@ -11,7 +12,7 @@ public:
 
     void SetDefaultImportantLevel(LevelsOfImportantMessage level);
 private:
-    std::string name_magazin_;
+    std::ofstream magazin_;
     LevelsOfImportantMessage default_level_;
 };
 

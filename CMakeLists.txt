@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.28.3)
 
 project(
-    magazin_library
+    magazine_library
     LANGUAGES CXX
 )
 
 set(CMAKE_CXX_STANDARD 17)
-# set(CMAKE_C_COMPILER g)
-# set(CMAKE_CXX_COMPILER g++)
+option(BUILD_SHARED_LIBS "Build shared libraries" ON)
+option(BUILD_STATIC_LIBS "Build static libraries" ON)
 
 add_subdirectory(bin)
 add_subdirectory(lib)
